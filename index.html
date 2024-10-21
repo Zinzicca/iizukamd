@@ -1,0 +1,198 @@
+-
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<head id="mainTitle">
+		<title>Dr. Iizuka Ophthalmology</title>
+	</head>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<script src="script.js"> </script>
+<link href="styles.css" rel="stylesheet">
+<!-- Page title or header -->
+
+<body>
+	<div class="header" id="header">
+
+		<body>
+			<h1 class="decorated"><span>Dr. Megumi Iizuka Ophthalmology</span></h1>
+		</body>
+	</div>
+	<script>
+		// Hide the back button by default on page load
+		document.addEventListener('DOMContentLoaded', () => {
+			hideBackButton(['backToHome']);
+		});
+	</script>
+	<!-- Navigation Tabs -->
+	<div class="tabs">
+		<button class="back-button" id="backToHome" onclick="showPage('home-page')"> Go Back </button>
+		<button class="tab-link" id="section1Tab" onclick="scrollToSection('section1')">Adult Patients</button>
+		<button class="tab-link" id="section2Tab" onclick="scrollToSection('section2')">Kids</button>
+		<button class="tab-link" id="section3Tab" onclick="scrollToSection('section3')">Requesting Medical
+			Records</button>
+		<button class="tab-link" id="page2Tab" onclick="showPage('page-2')">Locations and Contact</button>
+	</div>
+
+	<!-- Sections -->
+	<div id="home-page" class="tab-content active">
+		<div class="content">
+			<div class="closureAlert">
+				<h2>ATTENTION</h2>
+				<p>This is an office closure announcement of Dr Iizuka at 3101 Bloor Street West, suite #401 effective
+					October 2024.</p>
+			</div>
+
+			<section id="section1" class="section">
+				<h2 class="decorated-2"><span>Adult Patients</span></h2>
+				<div class="section1Contents">
+					<p class="sectionText">If you are an adult patient and I have seen, you recently or awaiting surgery
+						(after
+						June 2023) you may
+						book your follow up at TESS or Oakville (via phone) by calling my secretary and leaving me a
+						message.
+						They will not immediately book you a follow up on the phone until your request can be processed
+						as they
+						will not have a copy of your chart. This process may take up to two weeks. Patients awaiting
+						surgery may
+						contact Dr Iizuka via OTEC with my surgery counsellor
+					</p>
+					<img src="images/Adult-Pt.jpg" class="image1" alt="adult patient text photo">
+				</div>
+			</section>
+			<section id="section2" class="section">
+				<h2 class="decorated-2"><span>Kids</span></h2>
+				<div class="section2Contents">
+					<p class="sectionText">For kids, parents can request to be seen at either St Joseph’s Hospital or
+						TESS. You
+						will not be able to
+						book you an appointment on the phone immediately until your request can be processed. The
+						appointment
+						may not be given to you for up to two weeks.
+
+						If I have not seen you or your child in the last two years please request another consult
+						request via
+						their family doctors or optometrist to TESS, St Joseph's eye clinic or OTEC (adults only).
+					</p>
+					<img src="images/ped-2.jpg" class="image2" alt="adult patient text photo">
+				</div>
+			</section>
+			<section id="section3" class="section">
+				<h2 class="decorated-2"><span>Requesting Medical Records</span></h2>
+				<div class="section3Contents">
+					<p class="sectionText">If you would like a copy of your chart from the Bloor office, then you must
+						mail me a
+						cheque for $40 to
+						the attention of Dr Iizuka at 30 the Queensway (include address of St Joseph’s hospital). The
+						cheque
+						should be made out to Iizuka Medicine Professional Corporation Please indicate an email address
+						where
+						your chart can be sent electronically OR include a self addressed stamped envelope with the
+						appropriate
+						postage. Please be aware that electronic communication may not be secure if you send me a non
+						confidential email address.</p>
+					<img src="images/Charts image.jpg" class="image3" alt="adult patient text photo">
+				</div>
+			</section>
+		</div>
+	</div>
+	<div id="page-2" class="tab-content">
+		<div class="offices">
+			<div class="infoContainer">
+				<div class="info">
+					<h1 style="text-align: center;"> Bloor Office<br><span style="background-color: yellow;">CLOSING IN
+							OCTOBER 2024</span></h1>
+					<p><span style="font-weight: bold;">Phone: </span>416-239-1968</p>
+					<p><span style="font-weight: bold;">Fax: </span>416-233-4763</p>
+					<p><span style="font-weight: bold;">Email: </span>surgerybooking@protonmail.com</p>
+					<p><span style="font-weight: bold;">Address: </span>Suite 401 - 3101 Bloor Street West <br>
+						Etobicoke, ON M8X 2W2</p>
+					<p><span style="font-weight: bold;">Hours: </span>Mon-Fri 8:30AM-5:30PM</p>
+				</div>
+				<iframe class="map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.7742348419234!2d-79.51597614753672!3d43.64615143854384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b37acb41feb49%3A0x219d24091d71565!2sIizuka%20M%20Dr!5e0!3m2!1sen!2sca!4v1724948883855!5m2!1sen!2sca"
+					style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="infoContainer">
+				<div class="info">
+					<h1 style="text-align: center;"> Toronto Eye Specialists and Suregons (TESS)</h1>
+					<p><span style="font-weight: bold;">Phone: </span>647-748-8377</p>
+					<p><span style="font-weight: bold;">Fax: </span>416-619-5539</p>
+					<p><span style="font-weight: bold;">Email: </span>info@torontoeye.ca</p>
+					<p><span style="font-weight: bold;">Address: </span>Suite 301 - 801 Eglinton Ave. West <br> Toronto,
+						ON M5N 1E3</p>
+					<p><span style="font-weight: bold;">Hours: </span>Mon-Thurs 8:00AM-5:00PM <br> Fri. 8:00AM-3:00PM
+					</p>
+					<p><span style="font-weight: bold;">Direct Link: </span><a href="https://torontoeye.ca/"
+							style="color: black" target="_blank">TESS</a></p>
+				</div>
+				<iframe class="map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.1760800888287!2d-79.68089422308286!3d43.519520771108844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43cb17e33a31%3A0x9687c7efa606d355!2sOakville%20Trafalgar%20Eye%20Centre%20-%20OTEC%20Bristol%20circle!5e0!3m2!1sen!2sca!4v1724946358309!5m2!1sen!2sca"
+					style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+
+			<div class="infoContainer">
+				<div class="info">
+					<h1 style="text-align: center;"> Oakville Trafalgar Eye Center (OTEC)</h1>
+					<p><span style="font-weight: bold;">Phone: </span>905-337-3736</p>
+					<p><span style="font-weight: bold;">Fax: </span>905-337-8402</p>
+					<p><span style="font-weight: bold;">Email: </span>office@OTeye.ca</p>
+					<p><span style="font-weight: bold;">Address: </span>B100 - 2401 Bristol Circl <br> Oakville, ON L6H
+						5S9</p>
+					<p><span style="font-weight: bold;">Hours: </span>Mon-Fri 8:00AM-4:00PM</p>
+					<p><span style="font-weight: bold;">Direct Link: </span><a href="https://www.oteye.ca/"
+							style="color: black" target="_blank">OTEC</a></p>
+				</div>
+				<iframe class="map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.4606465455513!2d-79.4243935!3d43.700975199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b33a00438480f%3A0xb8c6b97a7286a81e!2sToronto%20Eye%20Specialists%20and%20Surgeons!5e0!3m2!1sen!2sca!4v1724946449346!5m2!1sen!2sca"
+					style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+
+		</div>
+	</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-item-1">
+			<h2>
+				Dr. Megumi Iizuka Medicine Corp.
+			</h2>
+			<i style="font-size:20px" class="fa">&#xf095; 416-239-1968</i>
+			<br>
+			<i style="font-size:20px" class="fa">&#xf1ac; 416-233-4763</i>
+			<br>
+			<i style="font-size:20px" class="fa">&#xf0e0; surgerybooking@protonmail.com</i>
+		</div>
+		<div class="footer-item-2">
+			<br><br>
+			<h2>
+				Quick Links
+			</h2>
+			<h4>Please select one of the links below to find Dr. Iizuka's clinic locations<br><br><a
+					href="https://torontoeye.ca/" style="color: white" target="_blank"> Toronto Eye Surgeons and
+					Specialists (TESS)</a>
+				<br><a href="https://www.oteye.ca/" style="color: white" target="_blank"> Oakville Trafalgar Eye Centre
+					(OTEC)</a>
+				</p><br>
+		</div>
+	</footer>
+</body>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.poptrox.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>

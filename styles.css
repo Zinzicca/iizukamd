@@ -1,0 +1,323 @@
+/* Formatting for the whole webpage */
+body, html { 
+    height: auto;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-y: auto;
+}
+
+/* Alignment config for main header title + the styling for lines on the sides */
+.header {
+    text-align: center;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.decorated {
+    overflow: hidden;
+    text-align: center;
+    font-weight: 400;
+}
+
+.decorated>span {
+    position: relative;
+    display: inline-block;
+}
+
+.decorated>span:before, .decorated>span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 3px solid;
+    width: 100vw;
+    margin: 0 20px;
+}
+
+.decorated>span:before {
+    right: 100%;
+}
+
+.decorated>span:after {
+    left: 100%;
+}
+
+/* Styling for lines on the sides of main page sub-headers */
+.decorated-2 {
+    overflow: hidden;
+    text-align: center;
+}
+
+.decorated-2>span {
+    position: relative;
+    display: inline-block;
+}
+
+.decorated-2>span:before, .decorated-2>span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid;
+    width: 100vw;
+    margin: 0 20px;
+}
+
+.decorated-2>span:before {
+    right: 100%;
+}
+
+.decorated-2>span:after {
+    left: 100%;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding-top: 20px;
+    padding: 10px 0;
+    position: static;
+    top: 0;
+    z-index: 1000;
+}
+
+.tab-link, .back-button {
+    color: black;
+    padding-top: 20px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.tab-link:hover, .back-button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.closureAlert {
+    border: 1px solid black;
+}
+
+.content, .closureAlert {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.section {
+    padding: 50px 0;
+    scroll-margin-top: 10px;
+    /* border: 3px solid blue;    */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+p.sectionText {
+    line-height: 1.8;
+    max-width: 40vw;
+    margin-left: 5vw;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+/* image config */
+.image1, .image2, .image3 {
+    width: 80%;
+    max-width: 30vw;
+    height: auto;
+    flex-grow: 2;
+    object-fit: contain;
+}
+
+.sectionText, .image1, .image2, .image3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 3px solid red;  */
+}
+
+.closureAlert h2 {
+    text-align: center;
+    padding: 0px;
+    border: 0px;
+    margin-bottom: 0px;
+    background-color: yellow;
+}
+
+.closureAlert p {
+    text-align: center;
+    font-style: italic;
+}
+
+.section1Contents, .section2Contents, .section3Contents {
+    /* border: solid yellow 5px; */
+    display: flex;
+    align-items: center;
+    flex-direction: row row-reverse;
+    gap: 20px;
+}
+
+
+/* Alginment config for the office info boxes next to maps */
+.info {
+    /* border: 2px solid green;  */ /* Border used for development process*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+}
+
+/* map sizing */
+.map {
+    margin: 0;
+    min-width: 800px;
+    min-height: 600px;
+}
+
+/* office info sub-text font settings */
+.offices p {
+    font-size: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* office names alignment config */
+.offices h1 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* alignment config for the content of the contact page */
+.offices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* alignment config for boxes of office info + map*/
+.infoContainer {
+    max-width: vw;
+    min-width: 650px;
+    height: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Flex container for the  contact page content */
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+/* padding and display settings for the main contents of the contact page */
+.tab-content {
+    display: none;
+    padding: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Styling for the footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    width: 100vw;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+
+}
+
+/* Styling for footer items */
+.footer-item-1, .footer-item-2 {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-item-1 {
+    margin-left: 20vw;
+}
+
+.footer-item-2 {
+    margin-right: 20vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Media Query For Narrow Viewports */
+@media (max-width: 1200px) {
+    .section1Contents, .section2Contents, .section3Contents {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p.sectionText, .info p {
+        line-height: 1.8;
+        max-width: 90vw;
+    }
+
+    .image1, .image2, .image3 {
+        width: 80%;
+        max-width: 400px;
+        transform: scale(1.2);
+        object-fit: contain;
+
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .infoContainer {
+        flex-direction: column;
+    }
+
+
+    .map {
+        min-width: 80vw;
+        min-height: 40vh;
+        object-fit: contain;
+    }
+}
